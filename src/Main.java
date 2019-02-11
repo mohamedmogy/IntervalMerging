@@ -8,7 +8,7 @@ public class Main {
      */
     public static void main(String[] args) {
         long startTime = System.nanoTime();
-
+        long beforeUsedMem=Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
 
         IntervallDTO x = new IntervallDTO(3,6);
         List<IntervallDTO> intervalle = new ArrayList<>();
@@ -25,7 +25,11 @@ public class Main {
 
         long endTime   = System.nanoTime();
         long totalTime = endTime - startTime;
-        System.out.println("Die Laufzeit des Programs = " +totalTime +" Nanosekunden");
+        long afterUsedMem=Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
+        long actualMemUsed=afterUsedMem-beforeUsedMem;
+
+        System.out.println("Die Laufzeit des Programms = " +totalTime +" Nanosekunden");
+        System.out.println("Der Speicherverbrauch des Programms = " + actualMemUsed +" Bytes");
     }
 
     /**
@@ -62,5 +66,3 @@ public class Main {
     }
 
 }
-
-
