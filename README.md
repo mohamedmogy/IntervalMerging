@@ -15,7 +15,7 @@ Java IntervalMerging/src/Main.java
 ```
 Oder man darf auch Einege Editor benutzen bzw. ( IntelliJ , Eclipse ... )
 
-##Description
+## Description
 Die Laufzeit des Programms ist umgefähr für das angegebene Beispiel 113011063 Nanosekunden.
 Ich habe extra methoden im Objekt IntervallDTO hinzugefügt falls ich die später benutzen werde.
 es hat gegen 2 Studenen gedauert um dieses Programm zu entwicklen.
