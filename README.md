@@ -1,7 +1,7 @@
 # IntervalMerging
 Interval Merging Solution ist ein Java Programm für mergen die überlappenden Intervalle  in einer liste.
 
-##Prerequisites
+## Prerequisites
 Java 8
 
 ## Installation
